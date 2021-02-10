@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetContact" targetNamespace="http://tempuri.org/DataSetContact.xsd" xmlns:mstns="http://tempuri.org/DataSetContact.xsd" xmlns="http://tempuri.org/DataSetContact.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetContact" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetContact" msprop:Generator_UserDSName="DataSetContact">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable0" msprop:Generator_TableClassName="DataTable0DataTable" msprop:Generator_TableVarName="tableDataTable0" msprop:Generator_RowChangedName="DataTable0RowChanged" msprop:Generator_TablePropName="DataTable0" msprop:Generator_RowDeletingName="DataTable0RowDeleting" msprop:Generator_RowChangingName="DataTable0RowChanging" msprop:Generator_RowEvHandlerName="DataTable0RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable0RowDeleted" msprop:Generator_RowClassName="DataTable0Row" msprop:Generator_UserTableName="DataTable0" msprop:Generator_RowEvArgName="DataTable0RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpId" msprop:Generator_ColumnVarNameInTable="columnEmpId" msprop:Generator_ColumnPropNameInRow="EmpId" msprop:Generator_ColumnPropNameInTable="EmpIdColumn" msprop:Generator_UserColumnName="EmpId" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpName" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" msprop:Generator_UserColumnName="EmpName" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpDepart" msprop:Generator_ColumnVarNameInTable="columnEmpDepart" msprop:Generator_ColumnPropNameInRow="EmpDepart" msprop:Generator_ColumnPropNameInTable="EmpDepartColumn" msprop:Generator_UserColumnName="EmpDepart" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpDesignation" msprop:Generator_ColumnVarNameInTable="columnEmpDesignation" msprop:Generator_ColumnPropNameInRow="EmpDesignation" msprop:Generator_ColumnPropNameInTable="EmpDesignationColumn" msprop:Generator_UserColumnName="EmpDesignation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmpContId" msprop:Generator_ColumnVarNameInTable="columnEmpContId" msprop:Generator_ColumnPropNameInRow="EmpContId" msprop:Generator_ColumnPropNameInTable="EmpContIdColumn" msprop:Generator_UserColumnName="EmpContId" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpId" msprop:Generator_ColumnVarNameInTable="columnEmpId" msprop:Generator_ColumnPropNameInRow="EmpId" msprop:Generator_ColumnPropNameInTable="EmpIdColumn" msprop:Generator_UserColumnName="EmpId" type="xs:int" minOccurs="0" />
+              <xs:element name="EmpContMobile" msprop:Generator_ColumnVarNameInTable="columnEmpContMobile" msprop:Generator_ColumnPropNameInRow="EmpContMobile" msprop:Generator_ColumnPropNameInTable="EmpContMobileColumn" msprop:Generator_UserColumnName="EmpContMobile" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpContEmail" msprop:Generator_ColumnVarNameInTable="columnEmpContEmail" msprop:Generator_ColumnPropNameInRow="EmpContEmail" msprop:Generator_ColumnPropNameInTable="EmpContEmailColumn" msprop:Generator_UserColumnName="EmpContEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpContAddress" msprop:Generator_ColumnVarNameInTable="columnEmpContAddress" msprop:Generator_ColumnPropNameInRow="EmpContAddress" msprop:Generator_ColumnPropNameInTable="EmpContAddressColumn" msprop:Generator_UserColumnName="EmpContAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpContCity" msprop:Generator_ColumnVarNameInTable="columnEmpContCity" msprop:Generator_ColumnPropNameInRow="EmpContCity" msprop:Generator_ColumnPropNameInTable="EmpContCityColumn" msprop:Generator_UserColumnName="EmpContCity" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="DataTable0_DataTable1" msdata:parent="DataTable0" msdata:child="DataTable1" msdata:parentkey="EmpId" msdata:childkey="EmpId" msprop:Generator_UserChildTable="DataTable1" msprop:Generator_ChildPropName="GetDataTable1Rows" msprop:Generator_UserRelationName="DataTable0_DataTable1" msprop:Generator_RelationVarName="relationDataTable0_DataTable1" msprop:Generator_UserParentTable="DataTable0" msprop:Generator_ParentPropName="DataTable0Row" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

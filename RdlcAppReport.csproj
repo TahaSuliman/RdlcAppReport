@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\ReportDataSet\DataSetContact.Designer.cs" />
+    <Content Remove="wwwroot\ReportDataSet\DataSetContact.xsc" />
+    <Content Remove="wwwroot\ReportDataSet\DataSetContact.xsd" />
+    <Content Remove="wwwroot\ReportDataSet\DataSetContact.xss" />
+    <Content Remove="wwwroot\ReportDataSet\EmployeeDataSet.Designer.cs" />
+    <Content Remove="wwwroot\ReportDataSet\EmployeeDataSet.xsc" />
+    <Content Remove="wwwroot\ReportDataSet\EmployeeDataSet.xsd" />
+    <Content Remove="wwwroot\ReportDataSet\EmployeeDataSet.xss" />
+    <Content Remove="wwwroot\Reports\ReportRdlc.rdlc" />
+    <Content Remove="wwwroot\Reports\ReportRdlcTwo.rdlc" />
+    <Content Remove="wwwroot\Reports\subReport.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="wwwroot\ReportDataSet\DataSetContact.Designer.cs">
+      <DependentUpon>DataSetContact.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="wwwroot\ReportDataSet\EmployeeDataSet.Designer.cs">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wwwroot\Reports\ReportRdlc.rdlc" />
+    <EmbeddedResource Include="wwwroot\Reports\ReportRdlcTwo.rdlc" />
+    <EmbeddedResource Include="wwwroot\Reports\subReport.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.Reporting" Version="2.1.0" />
+    <PackageReference Include="FastReport.OpenSource" Version="2021.1.7" />
+    <PackageReference Include="System.CodeDom" Version="5.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\ReportDataSet\DataSetContact.xsc">
+      <DependentUpon>DataSetContact.xsd</DependentUpon>
+    </None>
+    <None Include="wwwroot\ReportDataSet\DataSetContact.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>DataSetContact.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="wwwroot\ReportDataSet\DataSetContact.xss">
+      <DependentUpon>DataSetContact.xsd</DependentUpon>
+    </None>
+    <None Include="wwwroot\ReportDataSet\EmployeeDataSet.xsc">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="wwwroot\ReportDataSet\EmployeeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>EmployeeDataSet.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="wwwroot\ReportDataSet\EmployeeDataSet.xss">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
